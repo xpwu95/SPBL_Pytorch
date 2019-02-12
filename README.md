@@ -30,7 +30,7 @@ conda install cython
 ### Install SPBL
 Clone the repository
 ```shell
-git clone https://github.com/libuyu/GHM_Detection.git
+git clone https://github.com/xpwu95/SPBL_Pytorch.git
 ```
 
 ### Prepare Data
