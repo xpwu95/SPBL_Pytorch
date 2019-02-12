@@ -64,7 +64,7 @@ SPBL_Pytorch
 
 ## Running
 ```shell
-bash spaco.sh
+bash spbl.sh
 ```
 
 ### Configuration
