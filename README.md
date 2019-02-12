@@ -63,8 +63,9 @@ SPBL_Pytorch
 
 
 ## Running
-### Script
-We provide training and testing scripts and configuration files for both GHM and baseline (focal loss and smooth L1 loss) in the [experiments](https://github.com/libuyu/GHM_Detection/tree/master/experiments) directory. You need specify the path of your own pre-trained model in the config files.
+```shell
+bash spaco.sh
+```
 
 ### Configuration
 The configuration parameters are mainly in the cfg_*.py files. The parameters you most probably change are as follows:
