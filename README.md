@@ -2,7 +2,7 @@
 PyTorch implementation of "Self-Paced Balance Learning for Clinical Skin Disease Recognition"
 
 ## Installation
-This project is based on [mmdetection](https://github.com/open-mmlab/mmdetection). And we add GHM losses in it and modify some code for compatibility.
+This project is based on [spaco](https://github.com/open-mmlab/mmdetection). And we add imbalanced learning methods in it and modify some code for compatibility.
 
 ### Requirements
 - Python 3.4+
@@ -12,14 +12,14 @@ This project is based on [mmdetection](https://github.com/open-mmlab/mmdetection
 i. Create a new environment
 We recommend Anaconda as the package & environment manager. And here is an example:
 ```shell
-conda create -n ghm
-conda activate ghm
+conda create -n spbl
+conda activate spbl
 ```
 
 ii. Install PyTorch
 Follow the [official instructions](https://pytorch.org/) to install Pytorch. Here is an example using conda:
 ```shell
-conda install pytorch torchvision -c pytorch
+conda install pytorch=0.4.0 torchvision -c pytorch
 ```
 iii. Install Cython
 ```shell
@@ -34,14 +34,14 @@ git clone https://github.com/libuyu/GHM_Detection.git
 ```
 
 ### Prepare Data
-It is recommended to symlink the datasets root to `mmdetection/data`.
+It is recommended to symlink the datasets root to `spbl/data`.
 ```
 ln -s $YOUR_DATA_ROOT data
 ```
 The directories should be arranged like this:
 ```
-GHM_detection
-├──	mmdetection
+SPBL_Pytorch
+├──	spbl
 |	├── mmdet
 |	├── tools
 |	├── configs
