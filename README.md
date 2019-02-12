@@ -28,9 +28,14 @@ conda install cython
 ```
 
 ### Install SPBL
-Clone the repository
+i.Clone the repository
 ```shell
 git clone https://github.com/xpwu95/SPBL_Pytorch.git
+```
+ii. Compile extensions
+```shell
+cd open-reid
+python setup.py install
 ```
 
 ### Prepare Data
