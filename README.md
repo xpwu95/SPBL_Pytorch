@@ -91,11 +91,10 @@ The configuration parameters are mainly in the cfg_*.py files. The parameters yo
 
 Training using the Res50-FPN backbone and testing on COCO minival.
 
-Method | AP
--- | --
-FL + SL1 | 35.6%
-GHM-C + SL1 | 35.8%
-GHM-C + GHM-R | 37.0%
+Dataset | Precision | Recall | F1 | G-mean | MAUC | Accuracy
+-- | -- | -- | -- | -- | -- | --
+SD-198 | 35.6%
+SD-260 | 35.8%
 
 ## License
 This project is released under the [MIT license](https://github.com/libuyu/GHM_Detection/blob/master/LICENSE).
