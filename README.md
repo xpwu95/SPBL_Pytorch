@@ -10,6 +10,7 @@ This project is based on [spaco](https://github.com/Flowerfan/open-reid) project
 
 ### Setup the Environment and Packages
 i. Create a new environment
+
 We recommend Anaconda as the package & environment manager. And here is an example:
 ```shell
 conda create -n spbl
@@ -17,18 +18,21 @@ conda activate spbl
 ```
 
 ii. Install PyTorch
+
 Follow the [official instructions](https://pytorch.org/) to install Pytorch. Here is an example using conda:
 ```shell
 conda install pytorch=0.4.0 torchvision -c pytorch
 ```
 
 iii. Install Cython
+
 ```shell
 cd "matlabroot/extern/engines/python"
 python setup.py install
 ```
 
 iv. Install Python Matlab Engine
+
 Follow the [official instructions](https://www.mathworks.com/help/matlab/matlab-engine-for-python.html) to install python matlab engine. Here is an example using conda:
 ```shell
 conda install pytorch=0.4.0 torchvision -c pytorch
