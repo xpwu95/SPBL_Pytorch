@@ -80,7 +80,7 @@ SPBL_Pytorch
 
 ## Running
 ```shell
-bash spbl.sh
+python spbl.py
 ```
 
 ### Configuration
