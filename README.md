@@ -93,8 +93,8 @@ Training using the Res50-FPN backbone and testing on COCO minival.
 
 Dataset | Precision | Recall | F1 | G-mean | MAUC | Accuracy
 -- | -- | -- | -- | -- | -- | --
-SD-198 | 35.6%
-SD-260 | 35.8%
+SD-198 | 71.4$\pm$1.7 | 65.7$\pm$1.6 | 66.2$\pm$1.6 | 42.8$\pm$4.0 | 68.5$\pm$1.6 | 67.8$\pm$1.8
+SD-260 | 59.9$\pm$1.6 | 48.2$\pm$1.1 | 51.0$\pm$0.9 | 19.6$\pm$1.1 | 64.8$\pm$1.2 | 65.1$\pm$0.8
 
 ## License
 This project is released under the [MIT license](https://github.com/libuyu/GHM_Detection/blob/master/LICENSE).
