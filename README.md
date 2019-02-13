@@ -2,7 +2,7 @@
 PyTorch implementation of "Self-Paced Balance Learning for Clinical Skin Disease Recognition"
 
 ## Installation
-This project is based on [spaco](https://github.com/Flowerfan/open-reid) and [Open-Reid](https://github.com/Cysu/open-reid.git). And we add imbalanced learning methods in it and modify some code for compatibility.
+This project is based on [spaco](https://github.com/Flowerfan/open-reid) project and [Open-Reid](https://github.com/Cysu/open-reid.git) library. And we add imbalanced learning methods in it and modify some code for compatibility.
 
 ### Requirements
 - Python 3.4+
