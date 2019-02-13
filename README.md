@@ -52,7 +52,7 @@ python setup.py install
 
 ### Prepare Data
 
-[SD-198](http://cv.nankai.edu.cn/projects/sd-198/SD-198.zip) [SD-260](url)
+[SD-198](http://cv.nankai.edu.cn/projects/sd-198/SD-198.zip) [SD-260](https://pan.baidu.com/s/1T5vOPTYTVgqdl3r_JoiDCQ)
 
 It is recommended to symlink the datasets root to `spbl/data/dataset_name/raw/images`.
 ```
