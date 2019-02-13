@@ -6,6 +6,7 @@ import torchvision
 
 import matlab.engine
 from PIL import Image
+from examples.cfg import config
 
 
 class RandomRotation(object):
@@ -114,20 +115,16 @@ def get_dataloader(dataset,data_dir,
 
     if training:
         transformer = T.Compose([
-            T.RectScale(256, 256),
-            #T.RandomSizedRectCrop(height, width),
-            torchvision.transforms.RandomCrop(224),
-            #T.RandomHorizontalFlip()
+            T.RectScale(config.input_size + 32, config.input_size + 32),
+            torchvision.transforms.RandomCrop(config.input_size),
             torchvision.transforms.RandomHorizontalFlip(),
             # RandomRotation(degrees=20),
-            # RandomShift(3),
             T.ToTensor(),
             normalizer,
         ])
     else:
         transformer = T.Compose([
-            T.RectScale(224, 224),
-            #torchvision.transforms.CenterCrop(320),
+            T.RectScale(config.input_size, config.input_size),
             T.ToTensor(),
             normalizer,
         ])

@@ -12,27 +12,29 @@ from torch.autograd import Variable
 #from ..evaluation_metrics import accuracy
 from ..utils import to_torch
 from reid.evaluation_metrics.metrics import classification_report_imbalanced_light
+from examples.cfg import config
+
 _FEATURE_NUM = 128
 _DROPOUT = 0.3
 _PARAMS_FACTORY = {
     'resnet':
-        {'height':224,
-            'width':224},
+        {'height':config.input_size,
+            'width':config.input_size},
     'inception':
-        {'height':128,
-            'width':64},
+        {'height':config.input_size,
+            'width':config.input_size},
     'inception_v3':
-        {'height':299,
-            'width':299},
+        {'height':config.input_size,
+            'width':config.input_size},
     'densenet':
-        {'height':224,
-            'width':224},
+        {'height':config.input_size,
+            'width':config.input_size},
     'vgg':
-        {'height':224,
-            'width':224},
+        {'height':config.input_size,
+            'width':config.input_size},
     'mnist':
-        {'height':28,
-            'width':28}
+        {'height':config.input_size,
+            'width':config.input_size}
 }
 
 
@@ -70,8 +72,8 @@ def get_params_by_name(model_name):
             params = v
     if not params:
         raise ValueError('wrong model name, no params!')
-    params['batch_size'] = 64
-    params['workers'] = 2 # ?
+    params['batch_size'] = config.batch_size
+    params['workers'] = config.workers
     return params
 
 
@@ -264,13 +266,13 @@ def train_model_w(model,dataloader,testdata,data_dir,data_params,epochs=50,weigh
     else:
         param_groups = model.parameters()
     # optimizer = torch.optim.Adam(params=param_groups, lr=0.1, weight_decay=5e-4,amsgrad=True)
-    optimizer = torch.optim.SGD(param_groups, lr=0.01,
+    optimizer = torch.optim.SGD(param_groups, lr=config.lr,
                                 momentum=0.9,
                                 weight_decay=5e-4,
                                 nesterov=True)
 
     def adjust_lr(epoch):
-        step_size =40#20#40
+        step_size = config.step_size#20#40
         #0-150 0.1 150-250 0.01 250-350 0.001
         #resume 0.01
         # if epoch == 100:
@@ -278,7 +280,7 @@ def train_model_w(model,dataloader,testdata,data_dir,data_params,epochs=50,weigh
         # if epoch < 60: expand = 0
         # elif epoch < 80: expand = 1
         # else: expand = 2
-        lr = 0.01 * (0.1 ** (epoch // step_size)) # 0.1 * 0.1^(epoch divide step_size)
+        lr = config.lr * (0.1 ** (epoch // step_size)) # 0.1 * 0.1^(epoch divide step_size)
         #if(epoch >= 70):
         #    lr *= 0.1
         for g in optimizer.param_groups:
