@@ -27,7 +27,8 @@ conda install pytorch=0.4.0 torchvision -c pytorch
 iii. Install Cython
 
 ```shell
-conda install pytorch=0.4.0 torchvision -c pytorch
+conda install cython 
+# or "pip install cython"
 ```
 
 iv. Install Python Matlab Engine
