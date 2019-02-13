@@ -101,5 +101,3 @@ Accuracy | 64.1±0.5 | 88.6±0.4 | 99.0±0.1 | 72.0
 ## License
 This project is released under the [MIT license](https://github.com/libuyu/GHM_Detection/blob/master/LICENSE).
 
-## Citation
-
