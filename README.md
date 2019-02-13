@@ -39,6 +39,9 @@ python setup.py install
 ```
 
 ### Prepare Data
+
+[SD-198](url) [SD-260](url)
+
 It is recommended to symlink the datasets root to `spbl/data/dataset_name/raw/images`.
 ```
 ln -s $YOUR_DATA_ROOT data/dataset_name/raw/images
