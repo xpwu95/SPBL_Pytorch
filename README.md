@@ -87,10 +87,6 @@ The configuration parameters are mainly in the cfg_*.py files. The parameters yo
 	- *bins*, *momentum*: similar to ghmc 
 - *total_epochs*, *lr_config.step*: set the learning rate decay strategy
 
-### Loss Functions
-* The GHM-C and GHM-R loss functions are available in [ghm_loss.py](https://github.com/libuyu/GHM_Detection/blob/master/mmdetection/mmdet/core/loss/ghm_loss.py).
-* The code works for pytorch 0.4.1 and later version.
-
 ## Results
 
 Dataset | Precision | Recall | F1 | G-mean | MAUC | Accuracy
