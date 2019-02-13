@@ -39,9 +39,9 @@ python setup.py install
 ```
 
 ### Prepare Data
-It is recommended to symlink the datasets root to `spbl/data`.
+It is recommended to symlink the datasets root to `spbl/data/dataset_name/raw/images`.
 ```
-ln -s $YOUR_DATA_ROOT data
+ln -s $YOUR_DATA_ROOT data/dataset_name/raw/images
 ```
 The directories should be arranged like this:
 ```
