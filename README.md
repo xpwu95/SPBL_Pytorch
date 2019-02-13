@@ -84,20 +84,21 @@ bash spbl.sh
 ```
 
 ### Configuration
-The configuration parameters are mainly in the cfg_*.py files. The parameters you most probably change are as follows:
+The configuration parameters are mainly in the /examples/cfg.py files. The parameters you most probably change are as follows:
 
-- *work_dir*: the directory for current experiment
-- *datatype*: data set name (coco, voc, etc.)
-- *data_root*: Root for the data set
-- *model.pretrained*: the path to the ImageNet pretrained backbone model
-- *resume_from*: path or checkpoint file if resume
-- *train_cfg.ghmc*: params for GHM-C loss
-	- *bins*: unit region numbers
-	- *momentum*: moving average parameter \alpha
-- *train_cfg.ghmr*: params for GHM-R loss
-	- *mu*: the \mu for ASL1 loss
-	- *bins*, *momentum*: similar to ghmc 
-- *total_epochs*, *lr_config.step*: set the learning rate decay strategy
+- *input_size*: the size of input image
+- *lr*: learning rate
+- *batch_size*: batch size
+- *workers*: 
+- *iter_step*: the pace parameter of the SPBL
+- *gamma*: 
+- *train_ratio*: the ratio of the initial training set
+- *model*: model name
+- *dataset*: dataset name
+- *class_num*: the class number of the dataset
+- *epochs*: total training epochs
+- *step_size*: the step size of the learning rate decay
+- *add_ratios*: add ratios
 
 ## Results
 
