@@ -47,18 +47,19 @@ The directories should be arranged like this:
 ```
 SPBL_Pytorch
 ├──	spbl
-|	├── mmdet
-|	├── tools
-|	├── configs
-|	├── data
-|	│   ├── coco
-|	│   │   ├── annotations
-|	│   │   ├── train2017
-|	│   │   ├── val2017
-|	│   │   ├── test2017
-|	│   ├── VOCdevkit
-|	│   │   ├── VOC2007
-|	│   │   ├── VOC2012
+|	├── reid
+|	├── examples
+|	│   ├── data
+|	│   │   ├── sd-198
+|	│   │   │   ├── raw
+|	│   │   │   │   ├── images
+|	│   │   │   │   ├── train.txt
+|	│   │   │   │   ├── val.txt
+|	│   │   ├── sd-260
+|	│   │   ├── mit67
+|	│   │   ├── caltech101
+|	│   │   ├── minist
+|	│   │   ├── mlc
 ```
 
 
