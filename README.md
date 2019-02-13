@@ -21,10 +21,17 @@ Follow the [official instructions](https://pytorch.org/) to install Pytorch. Her
 ```shell
 conda install pytorch=0.4.0 torchvision -c pytorch
 ```
+
 iii. Install Cython
 ```shell
-conda install cython 
-# or "pip install cython"
+cd "matlabroot/extern/engines/python"
+python setup.py install
+```
+
+iv. Install Python Matlab Engine
+Follow the [official instructions](https://www.mathworks.com/help/matlab/matlab-engine-for-python.html) to install python matlab engine. Here is an example using conda:
+```shell
+conda install pytorch=0.4.0 torchvision -c pytorch
 ```
 
 ### Install SPBL
