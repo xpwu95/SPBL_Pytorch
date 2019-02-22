@@ -1,2 +1,2 @@
-SD-198: http://cv.nankai.edu.cn/projects/sd-198/SD-198.zip
-SD-260: http://cv.nankai.edu.cn/projects/sd-198/SD-260.rar
+SD-198: http://cv.nankai.edu.cn/projects/sd-198/
+SD-260: http://cv.nankai.edu.cn/projects/sd-198/
