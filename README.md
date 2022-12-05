@@ -52,7 +52,7 @@ python setup.py install
 
 ### Prepare Data
 
-The SD-198 and SD-260 datasets can be downloaded from http://xiaopingwu.cn/assets/projects/sd-198/.
+You can contact the [e-mail](liujiaxuan@mail.nankai.edu.cn) to obtain the SD-198 and SD-260 datasets.
 
 It is recommended to symlink the datasets root to `spbl/data/dataset_name/raw/images`.
 ```
