@@ -52,7 +52,7 @@ python setup.py install
 
 ### Prepare Data
 
-You can contact liujiaxuan@mail.nankai.edu.cn or xpwu95@163.com to obtain the SD-198 and SD-260 datasets.
+You can contact m15051413607@163.com to obtain the SD-198 and SD-260 datasets.
 
 It is recommended to symlink the datasets root to `spbl/data/dataset_name/raw/images`.
 ```
